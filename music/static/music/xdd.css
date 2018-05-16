@@ -1,0 +1,18 @@
+body {
+    background-image: url("images/bgc.jpg");
+}
+
+.navbar{
+    border-radius: 0;
+}
+
+.navbar-brand{
+
+    font-family: 'Satisfy', cursive;
+}
+.handler > img{
+
+}
+.caption{
+    text-align: center;
+}
