@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CLOCK</title>
+	<meta http-equiv="X_UA_Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 	 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+ 	 <link rel="stylesheet" content = "text/css" href="stylewatches.css">
+ 	 <script type="text/javascript">
+ 	 	
+ 	 	var hourHand = document.getElementById('hh');
+ 	 	var minuteHand = document.getElementById('mh');
+ 	 	var secondHand = document.getElementById('sh');
+
+ 	 	function initClock(){
+
+ 	 		var date = new Date();
+ 	 		var hour = date.getHours() % 12; 
+ 	 		var min = date.getMinutes() ;
+ 	 		var sec = date.getSeconds() ;
+
+ 	 		var hourdeg = (hour * 30) + (0.5 * min); // 360 / 12
+ 	 		var mindeg = (min * 6) + (0.1 * sec) ;
+ 	 		var secdeg = (sec * 6) ; // because of deggress 360 deg / 60 = 6
+
+ 	 		document.getElementById('hh').style.transform = "rotate(" + hourdeg + "deg)"; // add rotation by function of style
+ 	 		document.getElementById('mh').style.transform = "rotate(" + mindeg + "deg)";
+ 	 		document.getElementById('sh').style.transform = "rotate(" + secdeg + "deg)";
+ 	 		document.getElementById('hh2').style.transform = "rotate(" + hourdeg + "deg)"; // add rotation by function of style
+ 	 		document.getElementById('mh2').style.transform = "rotate(" + mindeg + "deg)";
+ 	 		document.getElementById('sh2').style.transform = "rotate(" + secdeg + "deg)";
+ 	 		document.getElementById('hh3').style.transform = "rotate(" + hourdeg + "deg)"; // add rotation by function of style
+ 	 		document.getElementById('mh3').style.transform = "rotate(" + mindeg + "deg)";
+ 	 		document.getElementById('sh3').style.transform = "rotate(" + secdeg + "deg)";
+ 	 		document.getElementById('hh4').style.transform = "rotate(" + hourdeg + "deg)"; // add rotation by function of style
+ 	 		document.getElementById('mh4').style.transform = "rotate(" + mindeg + "deg)";
+ 	 		document.getElementById('sh4').style.transform = "rotate(" + secdeg + "deg)";
+ 	 		document.getElementById('hh5').style.transform = "rotate(" + hourdeg + "deg)"; // add rotation by function of style
+ 	 		document.getElementById('mh5').style.transform = "rotate(" + mindeg + "deg)";
+ 	 		document.getElementById('sh5').style.transform = "rotate(" + secdeg + "deg)";
+ 	 		document.getElementById('hh6').style.transform = "rotate(" + hourdeg + "deg)"; // add rotation by function of style
+ 	 		document.getElementById('mh6').style.transform = "rotate(" + mindeg + "deg)";
+ 	 		document.getElementById('sh6').style.transform = "rotate(" + secdeg + "deg)";
+ 	 		document.getElementById('hh7').style.transform = "rotate(" + hourdeg + "deg)"; // add rotation by function of style
+ 	 		document.getElementById('mh7').style.transform = "rotate(" + mindeg + "deg)";
+ 	 		document.getElementById('sh7').style.transform = "rotate(" + secdeg + "deg)";
+ 	 		document.getElementById('hh8').style.transform = "rotate(" + hourdeg + "deg)"; // add rotation by function of style
+ 	 		document.getElementById('mh8').style.transform = "rotate(" + mindeg + "deg)";
+ 	 		document.getElementById('sh8').style.transform = "rotate(" + secdeg + "deg)";
+ 	 		document.getElementById('hh9').style.transform = "rotate(" + hourdeg + "deg)"; // add rotation by function of style
+ 	 		document.getElementById('mh9').style.transform = "rotate(" + mindeg + "deg)";
+ 	 		document.getElementById('sh9').style.transform = "rotate(" + secdeg + "deg)";
+ 	 		document.getElementById('hh10').style.transform = "rotate(" + hourdeg + "deg)"; // add rotation by function of style
+ 	 		document.getElementById('mh10').style.transform = "rotate(" + mindeg + "deg)";
+ 	 		document.getElementById('sh10').style.transform = "rotate(" + secdeg + "deg)";
+ 	 		document.getElementById('hh11').style.transform = "rotate(" + hourdeg + "deg)"; // add rotation by function of style
+ 	 		document.getElementById('mh11').style.transform = "rotate(" + mindeg + "deg)";
+ 	 		document.getElementById('sh11').style.transform = "rotate(" + secdeg + "deg)";
+ 	 		document.getElementById('hh12').style.transform = "rotate(" + hourdeg + "deg)"; // add rotation by function of style
+ 	 		document.getElementById('mh12').style.transform = "rotate(" + mindeg + "deg)";
+ 	 		document.getElementById('sh12').style.transform = "rotate(" + secdeg + "deg)";
+ 	 		document.getElementById('hh13').style.transform = "rotate(" + hourdeg + "deg)"; // add rotation by function of style
+ 	 		document.getElementById('mh13').style.transform = "rotate(" + mindeg + "deg)";
+ 	 		document.getElementById('sh13').style.transform = "rotate(" + secdeg + "deg)";
+ 	 		document.getElementById('hh14').style.transform = "rotate(" + hourdeg + "deg)"; // add rotation by function of style
+ 	 		document.getElementById('mh14').style.transform = "rotate(" + mindeg + "deg)";
+ 	 		document.getElementById('sh14').style.transform = "rotate(" + secdeg + "deg)";
+ 	 		document.getElementById('hh15').style.transform = "rotate(" + hourdeg + "deg)"; // add rotation by function of style
+ 	 		document.getElementById('mh15').style.transform = "rotate(" + mindeg + "deg)";
+ 	 		document.getElementById('sh15').style.transform = "rotate(" + secdeg + "deg)";
+ 	 		v
+ 	 		setTimeout("initClock()" , 1000); // call method after each 1s
+ 	 	};
+
+ 	 	function xdd(){
+ 	 		document.getElementById('hh').style.transform = "rotate(30deg)";
+ 	 	};
+ 	 </script>
+</head>
+<body onload="initClock()">
+	<div class="container" >
+		<div class="clock">
+			
+			<img id = "hh" class = "hands" src="icons/hourHand.png" >
+			<img id = "mh" class = "hands" src="icons/minute-hand.png">
+			<img id = "sh" class = "hands" src="icons/second.png">
+		</div>
+		<div class="clock2">
+			
+			<img id = "hh2" class ="hands2" src="icons/hourHand.png" >
+			<img id = "mh2" class ="hands2" src="icons/minute-hand.png">
+			<img id = "sh2" class ="hands2" src="icons/second.png">
+		</div>
+		<div class="clock3">
+			
+			<img id = "hh3" class ="hands3" src="icons/hourHand.png" >
+			<img id = "mh3" class ="hands3" src="icons/minute-hand.png">
+			<img id = "sh3" class ="hands3" src="icons/second.png">
+		</div>
+		<div class="clock4">
+			
+			<img id = "hh4" class ="hands4" src="icons/hourHand.png" >
+			<img id = "mh4" class ="hands4" src="icons/minute-hand.png">
+			<img id = "sh4" class ="hands4" src="icons/second.png">
+		</div>
+		<div class="clock5">
+			
+			<img id = "hh5" class ="hands5" src="icons/hourHand.png" >
+			<img id = "mh5" class ="hands5" src="icons/minute-hand.png">
+			<img id = "sh5" class ="hands5" src="icons/second.png">
+		</div>
+		<div class="clock6">
+			
+			<img id = "hh6" class ="hands6" src="icons/hourHand.png" >
+			<img id = "mh6" class ="hands6" src="icons/minute-hand.png">
+			<img id = "sh6" class ="hands6" src="icons/second.png">
+		</div>
+		<div class="clock7">
+			
+			<img id = "hh7" class ="hands7" src="icons/hourHand.png" >
+			<img id = "mh7" class ="hands7" src="icons/minute-hand.png">
+			<img id = "sh7" class ="hands7" src="icons/second.png">
+		</div>
+		<div class="clock8">
+			
+			<img id = "hh8" class ="hands8" src="icons/hourHand.png" >
+			<img id = "mh8" class ="hands8" src="icons/minute-hand.png">
+			<img id = "sh8" class ="hands8" src="icons/second.png">
+		</div>
+		<div class="clock9">
+			
+			<img id = "hh9" class ="hands9" src="icons/hourHand.png" >
+			<img id = "mh9" class ="hands9" src="icons/minute-hand.png">
+			<img id = "sh9" class ="hands9" src="icons/second.png">
+		</div>
+		<div class="clock10">
+			
+			<img id = "hh10" class ="hands10" src="icons/hourHand.png" >
+			<img id = "mh10" class ="hands10" src="icons/minute-hand.png">
+			<img id = "sh10" class ="hands10" src="icons/second.png">
+		</div>
+		<div class="clock11">
+			
+			<img id = "hh11" class ="hands11" src="icons/hourHand.png" >
+			<img id = "mh11" class ="hands11" src="icons/minute-hand.png">
+			<img id = "sh11" class ="hands11" src="icons/second.png">
+		</div>
+		<div class="clock12">
+			
+			<img id = "hh12" class ="hands12" src="icons/hourHand.png" >
+			<img id = "mh12" class ="hands12" src="icons/minute-hand.png">
+			<img id = "sh12" class ="hands12" src="icons/second.png">
+		</div>
+		<div class="clock13">
+			
+			<img id = "hh13" class ="hands13" src="icons/hourHand.png" >
+			<img id = "mh13" class ="hands13" src="icons/minute-hand.png">
+			<img id = "sh13" class ="hands13" src="icons/second.png">
+		</div>
+		<div class="clock14">
+			
+			<img id = "hh14" class ="hands14" src="icons/hourHand.png" >
+			<img id = "mh14" class ="hands14" src="icons/minute-hand.png">
+			<img id = "sh14" class ="hands14" src="icons/second.png">
+		</div>
+		<div class="clock15">
+			
+			<img id = "hh15" class ="hands15" src="icons/hourHand.png" >
+			<img id = "mh15" class ="hands15" src="icons/minute-hand.png">
+			<img id = "sh15" class ="hands15" src="icons/second.png">
+		</div>
+		
+	
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SZUBIENICA</title>
+	<meta http-equiv="X_UA_Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 	 <link rel="stylesheet" content = "text/css" href="style_gallows.css">
+ 	  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+ 	   <script src="gallows.js"></script>
+</head>
+<body onload="initClock()">
+	<div class="container-fluid">
+		<div class="container2">
+		<div class="wrapper2">
+			<div id="bo" class="board">	</div>
+			<div id="watch">
+				<img id="hh" src="icons/hourHand.png">
+				<img id="mh" src="icons/minute-hand.png">
+				<img id="sh" src="icons/second.png">
+			</div>
+		</div>
+		<div class="wrapper">	
+			
+			<div id="photo" class="gallows">
+				
+			</div>
+			<div class="alphabet">
+				<input class="butstart" type="button" value="START" onclick="write_code()">
+				<table>
+					<tr>
+						<td><input id="A" type="button" value="A" onclick="check('A')" class="bt"></td>
+						<td><input onclick="check('B')" id="B" type="button" value="B"></td>
+						<td><input onclick="check('C')"  id="C" type="button" value="C"></td>
+						<td><input onclick="check('D')"  id="D" type="button" value="D"></td>
+						<td><input  onclick="check('E')"  id="E" type="button" value="E"></td>
+					</tr>
+					<tr>
+						<td><input  onclick="check('F')"  id="F" type="button" value="F"></td>
+						<td><input  onclick="check('G')"  id="G" type="button" value="G"></td>
+						<td><input  onclick="check('H')"  id="H" type="button" value="H"></td>
+						<td><input  onclick="check('I')"  id="I" type="button" value="I"></td>
+						<td><input  onclick="check('J')"  id="J" type="button" value="J"></td>
+					</tr>
+					<tr>
+						<td><input onclick="check('K')"  id="K" type="button" value="K"></td>
+						<td><input onclick="check('L')"  id="L" type="button" value="L"></td>
+						<td><input onclick="check('M')"  id="M"  type="button" value="M"></td>
+						<td><input onclick="check('N')"  id="N"  type="button" value="N"></td>
+						<td><input onclick="check('O')"   id="O"  type="button" value="O"></td>
+					</tr>
+					<tr>
+						<td><input onclick="check('P')"   id="P"  type="button" value="P"></td>
+						<td><input onclick="check('Q')"   id="Q" type="button" value="Q"></td>
+						<td><input onclick="check('R')"   id="R" type="button" value="R"></td>
+						<td><input onclick="check('S')"   id="S" type="button" value="S"></td>
+						<td><input onclick="check('T')"  id="T"  type="button" value="T"></td>
+					</tr>
+					<tr>
+						<td><input onclick="check('U')"  id="U"  type="button" value="U"></td>
+						<td><input onclick="check('V')"  id="V"  type="button" value="V"></td>
+						<td><input onclick="check('W')"  id="W"  type="button" value="W"></td>
+						<td><input onclick="check('X')"  id="X"  type="button" value="X"></td>
+						<td><input onclick="check('Y')"   id="Y"  type="button" value="Y"></td>
+					</tr>
+					<tr class="last">
+						<td></td>
+						<td></td>
+
+						<td><input  onclick="check('Z')"  id="Z" type="button" value="Z"></td>
+						
+					</tr>
+				</table>
+			</div>
+
+		</div>
+	</div>
+</div>
+</body>
+</html>

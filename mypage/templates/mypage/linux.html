@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LINUX</title>
+	<meta http-equiv="X_UA_Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load staticfiles %}
+    <link rel="stylesheet" type = "text/css" href="{% static 'mypage/style_linux.css'%}">
+
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+ 	  	
+ 	  	function change_logo(){
+ 	  		document.getElementById('tux').src = "{% static 'mypage/images/tux2.png' %}";
+ 	  	}
+ 	  	function ch(){
+ 	  		document.getElementById('tux').src = "{%  static 'mypage/images/Tux.png'%}";
+ 	  	}
+ 	  	function change_back(x){
+ 	  		if(x == 1) {document.getElementById('fota').src = "{%  static 'mypage/images/ubuntu_wall.jpg'%}";
+ 	  			//document.getElementsByClassName('ff').style.color = "white";
+ 	  			document.getElementById('pp').style.color = "#FFFFFFFF";
+
+ 	  	}
+ 	  		if(x == 2) document.getElementById('fota').src = "{% static 'mypage/images/kali_wall.jpg'%}";
+ 	  		if(x == 3) document.getElementById('fota').src = "{% static 'mypage/images/arch_wall.png'%}";
+ 	  		if(x == 4) document.getElementById('fota').src = "{%  static 'mypage/images/debian_wall.jpg'%}";
+ 	  		if(x == 5) document.getElementById('fota').src = "{% static 'mypage/images/mint_wall.jpg'%}";
+ 	  		if(x == 6) document.getElementById('fota').src = "{% static 'mypage/images/fedora_wall.jpg'%}";
+
+ 	  	}
+ 	  </script>
+
+</head>
+<body>
+	<div class="container-fluid">
+	<div class="xd">
+
+		<img id = "tux" src="{% static 'mypage/images/Tux.png'%}" onmouseover="change_logo()" onmouseout="ch()">
+		<div class="logo">
+			<a>LINUX PAGE</a>
+		</div>
+	</div>
+	<div class="navbar">
+		<a>About</a>
+		<a>Distributions</a>
+		<a>Basics</a>
+		<a>Features</a>
+		<a>Quiz</a>
+	</div>
+	<div class="descriptions">
+		<h2>HISTORY</h2>
+		<div class="description1">
+			<img class="first_photo" src="{% static 'mypage/images/linus.jpg'%}">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.</p>
+		</div>
+		<br>
+		<div class="description dd">
+			<img src="{% static 'mypage/images/gnome.jpg'%}">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.</p>
+		</div>
+		<br>
+		<div class="description dd2">
+			<img src="{% static 'mypage/images/terminal.jpg'%}">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.</p>
+		</div>
+	</div>
+	<br>
+	<div class="distributions">
+		<h1>POPULAR DISTRIBUTIONS</h1>
+		<br>
+		<br>
+		<div class="dyst_foty">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 disp">
+				<img class="fotki" src="{%  static 'mypage/images/kali.png'%}">
+				<img class="fotki" src="{%  static 'mypage/images/ubuntu.jpg'%}">
+				<img class="fotki" src="{%  static 'mypage/images/fedora.jpg'%}">
+				<img class="fotki" src="{% static 'mypage/images/debian.jpg'%}">
+				<img class="fotki" src="{%  static 'mypage/images/mint.png'%}">
+				<img class="fotki" src="{%  static 'mypage/images/arch.png'%}">
+			</div>
+		</div>
+	</div>
+	<br>
+	
+	<div class="basics">
+			<h1>BASICS COMMANDS</h1>
+			<br>
+			<p><strong>1. pwd</strong> — When you first open the terminal, you are in the home directory of your user. To know which directory you are in, you can use the “pwd” command. It gives us the absolute path, which means the path that starts from the root. The root is the base of the Linux file system. It is denoted by a forward slash( / ). The user directory is usually something like "/home/username".</p>
+			<img src="{% static 'mypage/images/l1.png'%}">
+			<p>2. ls — Use the "Is" command to know what files are in the directory you are in. You can see all the hidden files by using the command “ls -a”.</p>
+			<img src="{%  static 'mypage/images/l2.png'%}">
+			<p>
+
+			3. cd — Use the "cd" command to go to a directory. For example, if you are in the home folder, and you want to go to the downloads folder, then you can type in “cd Downloads”. Remember, this command is case sensitive, and you have to type in the name of the folder exactly as it is. But there is a problem with these commands. Imagine you have a folder named “Raspberry Pi”. In this case, when you type in “cd Raspberry Pi”, the shell will take the second argument of the command as a different one, so you will get an error saying that the directory does not exist. Here, you can use a backward slash. That is, you can use “cd Raspberry\ Pi” in this case. Spaces are denoted like this: If you just type “cd” and press enter, it takes you to the home directory. To go back from a folder to the folder before that, you can type “cd ..” . The two dots represent back.</p>
+			<img src="{% static 'mypage/images/l3.png'%}">
+			<p>4. mkdir & rmdir — Use the mkdir command when you need to create a folder or a directory. For example, if you want to make a directory called “DIY”, then you can type “mkdir DIY”. Remember, as told before, if you want to create a directory named “DIY Hacking”, then you can type “mkdir DIY\ Hacking”. Use rmdir to delete a directory. But rmdir can only be used to delete an empty directory. To delete a directory containing files, use rm.</p>
+			<img src="{% static 'mypage/images/l4.png'%}">
+			<p>5. rm — Use the rm command to delete files and directories. But rm cannot simply delete a directory. Use “rm -r” to delete a directory. In this case, it deletes both the folder and the files in it.</p>
+			<img src="{% static 'mypage/images/l5.png'%}">
+			<p>6. touch — The touch command is used to create a file. It can be anything, from an empty txt file to an empty zip file. For example, “touch new.txt”.</p>
+			<img src="{% static 'mypage/images/l6.png'%}">
+			<p>7. man & --help — To know more about a command and how to use it, use the man command. It shows the manual pages of the command. For example, “man cd” shows the manual pages of the cd command. Typing in the command name and the argument helps it show which ways the command can be used (e.g., cd –help).</p>
+			<img src="{% static 'mypage/images/l7.png'%}">
+			<p>8. cp — Use the cp command to copy files through the command line. It takes two arguments: The first is the location of the file to be copied, the second is where to copy.</p>
+			<img src="{% static 'mypage/images/l8.png'%}">
+			<p>9. mv — Use the mv command to move files through the command line. We can also use the mv command to rename a file. For example, if we want to rename the file “text” to “new”, we can use “mv text new”. It takes the two arguments, just like the cp command.</p>
+			<img src="{% static 'mypage/images/l9.png'%}">
+			<p>10. locate — The locate command is used to locate a file in a Linux system, just like the search command in Windows. This command is useful when you don't know where a file is saved or the actual name of the file. Using the -i argument with the command helps to ignore the case (it doesn't matter if it is uppercase or lowercase). So, if you want a file that has the word “hello”, it gives the list of all the files in your Linux system containing the word "hello" when you type in “locate -i hello”. If you remember two words, you can separate them using an asterisk (*). For example, to locate a file containing the words "hello" and "this", you can use the command “locate -i *hello*this”.</p>
+			<img src="{% static 'mypage/images/l10.png'%}">
+	</div>
+	<div class="features">
+
+		<div class="ubuntu">  
+			<a>POPULAR DISTRIBUTIONS</a>
+			<div id="pp" class="navbar2">
+			
+				<a class="ff" onclick="change_back(1);">|Ubuntu|</a>
+				<a class="ff" onclick="change_back(2);">|Kali|</a>
+				<a class="ff" onclick="change_back(3)">|Arch|</a>
+				<a class="ff" onclick="change_back(4)">|Debian|</a>
+				<a class="ff" onclick="change_back(5)">|Mint|</a>
+				<a class="ff" onclick="change_back(6)">|Fedora|</a>
+			</div>
+			<img id = "fota" src="{% static 'mypage/images/ubuntu_wall.jpg'%}">
+		</div>
+	</div>
+</div>
+	
+	
+</body>
+</html>

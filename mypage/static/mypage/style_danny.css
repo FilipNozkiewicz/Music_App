@@ -1,0 +1,40 @@
+body{
+	background-image: url("images/wall.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	
+}
+.main{
+	height: 100%;
+	width: 100%;
+
+}
+.photo{
+	height: 50%;
+	width: 50%;
+}
+.dane{
+	margin-top: 2%;
+	font-size: 20px;
+	margin-left: 2%;
+	font-weight: 900;
+	display: flex;
+
+}
+.dane1{
+	display: inline;
+}
+.dane2{
+	margin-left: 100px;
+	font-weight: normal;
+	 font-family: "Times New Roman", Times, serif;
+}
+.dane > p{
+	margin-top: 3%;
+}
+.kontener{
+	margin-left: 4%;
+	margin-top: 8%;
+	position: absolute;
+	display: flex;
+}

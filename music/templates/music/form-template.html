@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'music/basic.css' %}">
+    <link rel="stylesheet"  href="{% static 'music/bootstrap-3.3.6-dist/css/bootstrap.css'%} ">
+</head>
+<body>
+    {% for field in form %}   <!-- forma jest domyslna-->
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <span class="text-danger small">{{ field.errors }}</span> <!-- automatyczne errory -->
+            </div>
+            <label class="control-label col-sm-2">{{ field.label_tag }}</label> <!-- nazwy pol -->
+            <div class="col-sm-10">{{ field }}</div> <!-- field is an imput -->
+        </div>
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,13 @@
+body{
+	text-align: center;
+	margin-top: 8%;
+
+}
+h1{
+	width: 100%;
+	font-size: 5vw;
+	text-align: center;
+}
+input{
+	height: 80px;
+}

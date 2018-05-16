@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GAMES</title>
+	<meta http-equiv="X_UA_Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load staticfiles %}
+     <link rel="stylesheet" type = "text/css" href="{%  static 'mypage/style_games.css'%}">
+
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ 	  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+ 	   
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="header">
+			<img class="head" src="images/games.png">
+		</div>
+		<div class="game_sections">
+			<div class="snake  col-lg-6 col-md-6 col-sm-6 col-xs-6 basic">
+				<img class="fotka" src="images/snake.jpg">
+				<p>
+				<form action="{% url 'mypage:snake'%}">
+    				<input class="but btn-danger" type="submit" value="PLAY" />
+				</form>
+				</p>
+			</div>
+			<div class="tic-tac  col-lg-6 col-md-6 col-sm-6 col-xs-6 basic">
+				<img class="fotka" src="images/tictac.jpg">
+				<p>
+				<form action="tic-tac-toe.html">
+    				<input class="but btn-danger" type="submit" value="PLAY" />
+				</form>	
+				</p>
+			</div>
+		</div>
+		<div class="game_sections">
+			<div class="pong  col-lg-6 col-md-6 col-sm-6 col-xs-6 basic">
+				<img class="fotka" src="images/pong.jpg">
+				<p>
+				<form action="pong.html">
+    				<input class="but btn-danger" type="submit" value="PLAY" />
+				</form>	
+				</p>
+			</div>
+			<div class="gallows  col-lg-6 col-md-6 col-sm-6 col-xs-6 basic">
+				<img class="fotka" src="images/gallows.jpg">
+				<p>
+				<form action="szubienica.html">
+    				<input class="but btn-danger" type="submit" value="PLAY" />
+				</form>	
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+
+</body>
+</html>

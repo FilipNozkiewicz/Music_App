@@ -1,0 +1,37 @@
+body{
+	background-color: #36EEF0;
+}
+.container-fluid{
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	
+
+}
+header{
+	font-family: 'Chicle', cursive;
+	font-weight: bold;
+	color: #211F1F;
+	text-shadow: 3px  3px #fff;
+	align-items: center;
+
+}
+canvas{
+	position: relative;
+}
+img {
+	position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+	display: block;
+    margin: auto;
+}
+#restart{
+	margin-left: 1%;
+	letter-spacing: 2px;
+}
+#restart:hover{
+	transform: rotate(30deg);
+}

@@ -1,0 +1,103 @@
+body{
+	background-color: #2F2F2FFF;
+}
+.container-fluid{
+align-items: center;
+}
+.basic{
+	margin-top: 2%;
+	text-align:center;
+	font-family: 'Dancing Script', cursive;
+}
+#my_photo{
+	border-radius: 50%;
+	position: absolute;
+	z-index: 2;
+	display: flex;
+	left: 30%;
+	width: 40%;
+	height: auto;
+
+}
+#krata{
+	
+	opacity: 0.5;
+
+	max-height: 500px;
+	
+	width: 90%;
+	height: auto%;
+	position: relative;
+	margin-top: 10%;
+	
+
+
+}
+.name{
+	color: black;
+	font-size: 4vw;
+	position: absolute;
+	bottom: 40%;
+	left: 38%;
+}
+.napisy > a:not(:first-child){
+
+	margin-left: 5%;
+}
+.napisy > a{
+	color: black;
+	font-size: 3vw;
+}
+.napisy > a:hover{
+	cursor: pointer;
+}
+.napisy{
+	width: 100%;
+	position: absolute;
+	bottom: 25%;
+}
+.symbols{
+		display: flex;
+		text-align: center;
+		width: 90%;
+		left: 5%;
+
+}
+.xd > img{
+	width: 15%;
+	height: auto;
+	
+	filter: grayscale(100%);
+
+}
+
+.symbols > div:not(:first-child){
+	margin-left: ;
+	
+}
+.xd{
+	
+	width: 25%;
+	display: inline-block;
+	text-align: center;
+	background-color: #434343FF;
+}
+
+.but{
+	width: 18%;
+	color: #345A1FFF;
+
+
+}
+.register{
+	
+	
+	text-align: right;
+	margin-right: 5%;
+	margin-top: 3%;
+
+}
+.register >a{
+	color: #44FF0CFF;
+	font-size: 2vw;
+}

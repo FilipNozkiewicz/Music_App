@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TIC-TAC-TOE</title>
+	<meta http-equiv="X_UA_Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 	 <link rel="stylesheet" content = "text/css" href="style_tic.css">
+ 	  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+ 	   <script src="tic.js"></script>
+ 	   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="jumbotron">
+			<h1>TIC-TAC-TOE</h1>
+		</div>
+		<div class = "board">
+			<table>
+				<tr>
+					<td><input id="b1" type="button"
+						onclick="put('b1')"></td>
+					<td><input id="b2" 
+						onclick="put('b2')" type="button"></td>
+					<td><input id="b3" 
+						onclick="put('b3')" type="button"></td>
+				</tr>
+				<tr>
+					<td><input id="b4" 
+						onclick="put('b4')" type="button"></td>
+					<td><input id="b5" 
+						onclick="put('b5')" type="button"></td>
+					<td><input id="b6"
+						onclick="put('b6')"  type="button"></td>
+				</tr>
+				<tr>
+					<td><input id="b7" 
+						onclick="put('b7')" type="button"></td>
+					<td><input id="b8" 
+						onclick="put('b8')" type="button"></td>
+					<td><input id="b9" 
+						onclick="put('b9')" type="button"></td>
+				</tr>
+			</table>
+			<input id ="rb" type="button" value="Refresh Page" onclick="window.location.reload()">
+		</div>
+	</div>
+</body>
+</html>

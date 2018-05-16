@@ -1,0 +1,42 @@
+body{
+	background-color:  #9DECCA;
+}
+.jumbotron{
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	background-image: url("icons/header.jpg");
+	color: yellow;
+
+}
+.board{
+	height: 50%;
+	width: 50%;
+	min-height: 400px;
+	margin-left: 0;
+	margin-top: 10%;
+	margin: 0 auto;
+	
+}
+.board > table{
+	height: 100%;
+	width: 100%;
+}
+td > input {
+	width: 100%;
+	background-color:#F8F01C;
+	height: 100%;
+	min-height: 150px;
+}
+td > input {
+	background-image: url("");
+	background-size: 100% 100%;
+}
+#rb{
+	height: 200px;
+	width: 200px;
+	
+	margin-left: 40%;
+	margin-top: 2%;
+	background-color: #10F0D8;
+	font-size: 20px;
+}

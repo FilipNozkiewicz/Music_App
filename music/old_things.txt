@@ -1,0 +1,49 @@
+from django.shortcuts import render
+from django.http import  HttpResponse
+# Create your views here.
+'''from django.template import loader
+from django.shortcuts import render , get_object_or_404
+from django.http import Http404
+from music.models import Album, Song
+
+
+def index(request):
+    # connect the databaase
+    all_albums = Album.objects.all()  # zwracam wszystkie albumy do zmiennej
+
+    #for album in all_albums:
+     #   url = '/music/'+ str(album.id) +'/'
+      #  html += '<a href="'+url+'">'+ album.album_title +'</a><br>' # database connection
+
+    template = loader.get_template('music/index.html') # from music load the template
+    dictionary = {
+        'all_albums' : all_albums,  # przekazanie do templatki uwazac zeby sie nie pomylic bo tak to wizi html
+    }
+   # return  HttpResponse(template.render(dictionary , request))  # each url is conneted to the view
+    return render(request , 'music/index.html' , dictionary)
+
+def detail(request , album_id):   # album id is the second argument in the adress
+   # return HttpResponse("<h1>this is albun nr: "  + str(album_id) + "</h1>")
+    ''''''try:
+        album = Album.objects.get(pk=album_id) # if such album pk exists
+    except Album.DoesNotExist:
+        raise Http404("Album does not exist")  # jesli ni ma takieo obiketu to zwroc 404 '''
+    ''' album = get_object_or_404(Album , pk=album_id)   # get object fro m album by primary key
+    return render(request , 'music/detail.html' , {'album' : album })
+
+def favourite(request ,album_id):
+    album = get_object_or_404(Album , pk=album_id)
+    try:
+       selected_song = album.song_set.get(pk=request.POST['song']) # zwraca id wybranej odpowiedzi jako stringa
+    except (KeyError , Song.DoesNotExist):
+        return render(request , 'music/detail.html' , {
+            'album':album ,
+            'error_message': "Not selected a song",   # ustawiam errora do przeslania do html
+        })
+    else:
+        if selected_song.is_favourite == False:
+            selected_song.is_favourite = True;
+        else:
+            selected_song.is_favourite = False
+        selected_song.save() # and when everything is ok jus t return
+        return render(request , 'music/detail.html' , {'album' : album}) '''

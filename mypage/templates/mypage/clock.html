@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CLOCK</title>
+	<meta http-equiv="X_UA_Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 	 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+ 	 <link rel="stylesheet" content = "text/css" href="stylewatches.css">
+ 	 <script type="text/javascript">
+ 	 	
+ 	 	var hourHand = document.getElementById('hh');
+ 	 	var minuteHand = document.getElementById('mh');
+ 	 	var secondHand = document.getElementById('sh');
+
+ 	 	function initClock(){
+
+ 	 		var date = new Date();
+ 	 		var hour = date.getHours() % 12; 
+ 	 		var min = date.getMinutes() ;
+ 	 		var sec = date.getSeconds() ;
+
+ 	 		var hourdeg = (hour * 30) + (0.5 * min); // 360 / 12
+ 	 		var mindeg = (min * 6) + (0.1 * sec) ;
+ 	 		var secdeg = (sec * 6) ; // because of deggress 360 deg / 60 = 6
+
+ 	 		document.getElementByClassName('hh').style.transform = "rotate(" + hourdeg + "deg)"; // add rotation by function of style
+ 	 		document.getElementByClassName('mh').style.transform = "rotate(" + mindeg + "deg)";
+ 	 		document.getElementByClassName('sh').style.transform = "rotate(" + secdeg + "deg)";
+ 	 		setTimeout("initClock()" , 1000); // call method after each 1s
+ 	 	};
+
+ 	 	function xdd(){
+ 	 		document.getElementById('hh').style.transform = "rotate(30deg)";
+ 	 	};
+ 	 </script>
+</head>
+<body onload="initClock()">
+	<div class="container" >
+		
+		<div class="clock2">
+			
+			<img class = "hh" class = "hands2" src="icons/hourHand.png" >
+			<img class = "mh" class = "hands2" src="icons/minute-hand.png">
+			<img class = "sh" class = "hands2" src="icons/second.png">
+		</div>
+		
+	
+	</div>
+
+</body>
+</html>
