@@ -42,7 +42,9 @@
                         </a>
                     </li>
                 </ul>
-                <form class="navbar-form navbar-left" role="search" method="get" action="#"> <!--get dodaje form do url -->
+                <form class="navbar-form navbar-left" role="search" method="post" action={% url 'music:search' %} name="q"> <!--get dodaje form do url   name go to url afer making name attribute-->
+                    {% csrf_token %}   <!-- Cross Site Request Forgery  protect too use this action only to that application -->
+                    <!-- generate cryptograpically strong toen so the app can validate it while logging -->
                     <div class="form-group">
                         <input type="text" class="form-control" name="q" value=""> <!-- specjalny search do tekstu -->
                     </div>
@@ -63,22 +65,22 @@
                             </a>
                         </li>
                     -->
-                    {% if user.is_authenticated or user.is_superuser %}   <!-- atribute of user object built in django like is_superuser from models.User-->
+              <!--     {#% if user.is_authenticated or user.is_superuser %#}
                          <li>
                              <a href="/accounts/login/">
                                  <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
                                  Logon
                              </a>
                         </li>
-                    {% else %}
+                    {#% else %#}
                          <li>
 
                              <a href="/accounts/login/">
                                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                                  Logon
                              </a>
-                        </li>
-                    {% endif %}
+                        </li> -->
+                    {#% endif %#}
                 </ul>
             </div>
         </div>
@@ -89,10 +91,10 @@
         {% if all_albums %}  <!-- if they are fucking exists -->
         <ul>
             {% for album in all_albums %}
-                <div class="col-sm-4 album_logo">
+                <div class="col-sm-3 col-md-3 col-lg-3 album_logo">
                     <div class="thumbnail"> <!-- scale images-->
                         <a class="handler" href="{% url 'music:detail' album.id %} ">
-                            <img class="img-responsive logo_im" src="{{ album.album_logo.url }}" > <!-- i tak zwraca wszystkie elementy albuma--><!-- refer to object url-->
+                            <img class="img-responsive logo_im" src="{{ album.album_logo.url }}" /> <!-- i tak zwraca wszystkie elementy albuma--><!-- refer to object url-->
                             <!-- file path whenevver the image is stored-->
                         </a>
                         <div class="caption">  <!-- podkladka do logo z napisami-->

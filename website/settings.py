@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
 
-    'mypage.apps.MypageConfig',  # this is fucking importaaaannnnnntttt !!!!!!!
+  #  'mypage.apps.MypageConfig',  # this is fucking importaaaannnnnntttt !!!!!!!
     'music.apps.MusicConfig',  # what tables are needed o work with this App
     'django.contrib.admin',
     'django.contrib.auth',

@@ -1,3 +1,5 @@
+from django.contrib import messages
+from django.db.models import Q
 from django.shortcuts import render, redirect
 from django.http import  HttpResponse
 # Create your views here.
@@ -119,5 +121,26 @@ class UserFormView(View):
                 return redirect('music:index')  # after logging redirect to home page
 
         return render(request, self.template_name, {'form': form})  # if form is not valid return this blank form
+
+def search(request):
+    if(request.method == 'POST'):
+        #query = request.GET.get("q")
+        query = request.POST['srch']
+        if query:     # if there is a query
+            match = Album.objects.filter(Q(album_title=query) | Q(artist=query))
+
+            if match:  # if it matches then
+                return redirect('music:index')
+
+            else:
+                return messages.error(request , 'no result found')
+
+        else:
+            return redirect('music:search')
+
+    else:
+        return redirect('music:index')
+
+
 
 

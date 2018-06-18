@@ -11,7 +11,8 @@ body {
     font-family: 'Satisfy', cursive;
 }
 .handler > img{
-
+    width: 90%;
+    height: 90%;
 }
 .caption{
     text-align: center;

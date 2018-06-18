@@ -6,7 +6,7 @@ app_name = 'music'  # we can use it in templtes
 urlpatterns = [    # just one letter mistake
     # music
     url(r'^$' , views.index , name='index') , # request anything
-    url(r'^register/$' , views.UserFormView.as_view() , name='register') , # request anything   # music/register
+  #  url(r'^register/$' , views.UserFormView.as_view() , name='register') , # request anything   # music/register
 
 
 
@@ -26,7 +26,8 @@ urlpatterns = [    # just one letter mistake
 
     url(r'album/(?P<album_id>[0-9]+)/delete/$' , views.AlbumDelete.as_view() , name='delete'), # sciezka do dodawania albumow dlatego album/add
 
-    url(r'^(?P<id>\d+)/delete/$' , views.post_delete , name='album-delete' )
+    url(r'^(?P<id>\d+)/delete/$' , views.post_delete , name='album-delete' ),
+    url(r'search/$' , views.search , name='search')
     # to czyta jako form do albumow
 ]
 

@@ -24,10 +24,11 @@ urlpatterns = [
     #path('admin/', admin.site.urls),
     #path('mypage/' , include('mypage.urls')),
     url(r'^admin/' , admin.site.urls ),
-    url(r'^mypage/' , include('mypage.urls')),
+  #  url(r'^mypage/' , include('mypage.urls')),
     url(r'^music/' , include('music.urls')),
-    url(r'^accounts/login/$', views.login, name='login'),
-    url(r'^accounts/logout/$', views.logout, name='logout', kwargs={ 'next_page' : '/'  }),
+
+ #   url(r'^accounts/login/$', views.login, name='login'),
+   # url(r'^accounts/logout/$', views.logout, name='logout', kwargs={ 'next_page' : '/'  }),
 
 ]
 
